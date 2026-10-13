@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+backend/vendor/
+backend/storage/*.key
+backend/public/storage

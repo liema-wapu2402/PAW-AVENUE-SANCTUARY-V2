@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+<defs><linearGradient id="bgbeth" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe6b0"/><stop offset="1" stop-color="#f7a14d"/></linearGradient><radialGradient id="glowbeth" cx=".5" cy=".3" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="300" height="300" fill="url(#bgbeth)"/><rect width="300" height="300" fill="url(#glowbeth)"/>
+<circle cx="245.99999999999997" cy="54.0" r="46.0" fill="#fff" opacity=".14"/><circle cx="36.0" cy="210.0" r="60.0" fill="#fff" opacity=".10"/>
+<g transform="translate(150.0 120.0) scale(1.38) translate(-150.0 -120.0)">
+<path d="M82.0,120.0 C74.0,190.0 96.0,198.0 110.0,190.0 L190.0,190.0 C204.0,198.0 226.0,190.0 218.0,120.0 Z" fill="#1e1512"/>
+<path d="M-10.0,305 L-10.0,226.0 C20.0,182.0 80.0,174.0 120.0,172.0 L180.0,172.0 C220.0,174.0 280.0,182.0 310.0,226.0 L310.0,305 Z" fill="#8a5a2b"/>
+<path d="M114.0,172.0 L150.0,226.0 L186.0,172.0 L172.0,170.0 L150.0,200.0 L128.0,170.0 Z" fill="#ffe6c2"/>
+<path d="M124.0,170.0 L124.0,180.0 Q150.0,208.0 176.0,180.0 L176.0,170.0 Z" fill="#b57a50"/>
+<ellipse cx="94.0" cy="124.0" rx="9.0" ry="14.0" fill="#c98f63"/><ellipse cx="206.0" cy="124.0" rx="9.0" ry="14.0" fill="#c98f63"/>
+<ellipse cx="150.0" cy="120.0" rx="58.0" ry="70.0" fill="#c98f63"/>
+<ellipse cx="120.0" cy="142.0" rx="12.0" ry="8.0" fill="#ff8f6b" opacity=".28"/><ellipse cx="180.0" cy="142.0" rx="12.0" ry="8.0" fill="#ff8f6b" opacity=".28"/>
+<path d="M88.0,126.0 C82.0,32.0 218.0,32.0 212.0,126.0 C206.0,90.0 166.0,74.0 144.0,76.0 C120.0,78.0 96.0,94.0 88.0,126.0 Z" fill="#1e1512"/>
+<path d="M112.0,106.0 Q126.0,98.0 138.0,105.0" stroke="#1e1512" stroke-width="4.0" fill="none" stroke-linecap="round"/><path d="M162.0,105.0 Q174.0,98.0 188.0,106.0" stroke="#1e1512" stroke-width="4.0" fill="none" stroke-linecap="round"/>
+<ellipse cx="126.0" cy="122.0" rx="6.5" ry="7.5" fill="#2a1a12"/><circle cx="128.0" cy="119.0" r="2.2" fill="#fff"/>
+<ellipse cx="174.0" cy="122.0" rx="6.5" ry="7.5" fill="#2a1a12"/><circle cx="176.0" cy="119.0" r="2.2" fill="#fff"/>
+<path d="M145.0,142.0 Q150.0,147.0 155.0,142.0" stroke="#b57a50" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+<path d="M136.0,158.0 Q150.0,173.4 164.0,158.0" stroke="#7a3a2a" stroke-width="3.6" fill="#fff" stroke-linejoin="round" stroke-linecap="round"/>
+</g></svg>
