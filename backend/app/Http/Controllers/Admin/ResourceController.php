@@ -14,6 +14,7 @@ use App\Models\Testimonial;
 use App\Models\Vet;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * One admin controller for every manageable resource.
@@ -181,7 +182,12 @@ class ResourceController extends Controller
         }
 
         if ($request->hasFile('image')) {
-            $data['image'] = '/storage/'.$request->file('image')->store('uploads', 'public');
+            // FILESYSTEM_DISK=public -> local disk; any other disk (s3 / Cloudflare R2) -> full public URL.
+            $disk = config('filesystems.default');
+            $path = $request->file('image')->store('uploads', $disk);
+            $data['image'] = $disk === 'public'
+                ? '/storage/'.$path
+                : Storage::disk($disk)->url($path);
         }
 
         return $data;
