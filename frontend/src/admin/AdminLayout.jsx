@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import { useAuth } from "../auth";
 import { IconDefs } from "../components/Icons";
+import LoadingModal from "../components/LoadingModal";
+
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 import { RESOURCES, NAV_ORDER } from "./resources";
 
 export default function AdminLayout() {
@@ -16,8 +19,12 @@ export default function AdminLayout() {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
 
   const signOut = async () => {
+    setSigningOut(true);
+    setOpen(false);
+    await wait(900); // keep the loading modal on screen long enough to be seen
     await logout();
     navigate("/admin/login");
   };
@@ -36,6 +43,11 @@ export default function AdminLayout() {
   return (
     <div className={`admin ${open ? "menu-open" : ""}`}>
       <IconDefs />
+      <LoadingModal
+        show={signingOut}
+        title="Signing you out"
+        text="Securing your session, see you soon!"
+      />
       <aside className="admin-side">
         <Link to="/admin" className="admin-brand">
           <img src="/images/LOGO/paas-mark-cream.png" alt="" />
@@ -60,7 +72,7 @@ export default function AdminLayout() {
             <i className="nav-ico">🌐</i>
             <span>View website</span>
           </a>
-          <button onClick={signOut}>
+          <button onClick={signOut} disabled={signingOut}>
             <i className="nav-ico">⎋</i>
             <span>Sign out</span>
           </button>
