@@ -24,7 +24,7 @@ const instantLogin = "on";
 // Default admin account used when instantLogin === 'on'.
 const DEFAULT_ADMIN = {
   email: "admin@pawavenue.test",
-  password: "ChangeMe123!",
+  password: "password123",
 };
 
 const isInstant = instantLogin === "on";

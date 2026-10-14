@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             ['email' => env('ADMIN_EMAIL', 'admin@pawavenue.test')],
             [
                 'name' => env('ADMIN_NAME', 'Paw Avenue Sanctuary Admin'),
-                'password' => env('ADMIN_PASSWORD', 'ChangeMe123!'),
+                'password' => env('ADMIN_PASSWORD', 'password123'),
                 'role' => 'admin',
             ]
         );
